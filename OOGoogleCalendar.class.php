@@ -1,5 +1,11 @@
 <?php
 
+/*	Google Calendar
+ * 	Author: Tedi Cela
+ * 	Date: 28.07.2014
+ * 	Version: 1.0
+ */
+
 session_start();
 
 require "Google/Client.php";
@@ -11,7 +17,7 @@ class OOGoogleCalendar{
 	private $DeveloperKey = '';
 	private $ClientId = '';
 	private $ClientSecret = '';
-	private $RedirectUri = 'http://www.tedicela.tk/calendar/start.php';
+	private $RedirectUri = 'http://YOURHOSTNAME/start.php';
 	private $Scopes =array('https://www.googleapis.com/auth/calendar');
 	private $token_path = 'token.conf';
 	private $token_source = null;
